@@ -22,7 +22,7 @@ jobs:
       - name: Raspakiraj Android projekt
         run: |
           rm -rf project
-          mkdir -p 
+          mkdir -p project
           unzip -q Josip_Pozega_Tus_Glava_0.3.0_NFC_Forensics_Izvorni_Kod.zip -d project
 
       - name: Postavi Java 17
@@ -52,6 +52,6 @@ jobs:
       - name: Spremi gotovi APK
         uses: actions/upload-artifact@v4
         with:
-          name: name: Josip-Pozega-Tus-Glava-0.3.0-NFC-Forensics
+          name: Josip-Pozega-Tus-Glava-0.3.0-NFC-Forensics
           path: project/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
